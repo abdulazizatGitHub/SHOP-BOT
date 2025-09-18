@@ -3,6 +3,9 @@ from sentence_transformers import SentenceTransformer
 import psycopg2
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # ENV or configure here
 PG_HOST = os.getenv("PG_HOST", "localhost")
 PG_PORT = os.getenv("PG_PORT", "5432")

@@ -4,6 +4,10 @@ import requests
 import os
 import json
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
 PG_HOST = os.getenv("PG_HOST", "localhost")
 PG_PORT = os.getenv("PG_PORT", "5432")
 PG_DB   = os.getenv("PG_DB", "shopbot")
